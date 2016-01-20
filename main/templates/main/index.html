@@ -1,0 +1,10 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+<h1>Main Page</h1>
+{% if user.auth_token %}
+<p>Your auth token: {{ user.auth_token.key }}</p>
+{% endif %}
+
+{% endblock %}
